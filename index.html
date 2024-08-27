@@ -10,7 +10,7 @@
     <h1 id="title">Feedback Form</h1>
     <p id="description"><i>Hi, there! Please kindly fill out this form with the required information. Your feedback helps freeCodeCamp to be in the forefront of software engineering education worldwide. We are always working to serve the global community better.</i></p>
     <br>
-    <form id="survey-form">
+    <form id="survey-form" aria-label="Survey Form">
         <fieldset>
             <label id="name-label" for="name">Name:</label>
             <input id="name" type="text" name="name" placeholder="Enter your name" required>
@@ -36,44 +36,44 @@
         </fieldset>
         <fieldset>
             <label id="likely" class="label-style" for="likely">How likely is that you would recommend freeCodeCamp to a friend?</label>
-            <input type="radio" class="inline" name="recommend" value="likely" id="likely">Likely
-            <input type="radio" class="inline" name="recommend" value="perhaps" id="perhaps">Perhaps
-            <input type="radio" class="inline" name="recommend" value="nope" id="nope">Nope
+            <input type="radio" class="inline" name="recommend" value="likely" id="likely" aria-label="Likely">Likely
+            <input type="radio" class="inline" name="recommend" value="perhaps" id="perhaps" aria-label="Perhaps">Perhaps
+            <input type="radio" class="inline" name="recommend" value="nope" id="nope" aria-label="Nope">Nope
         </fieldset>
         <fieldset>
             <label for="feature">What's your favorite feature of freeCodeCamp?
                 <select id="feature">
-                    <option value="">Select one, please</option>
-                    <option value="1">Open Source</option>
-                    <option value="2">Community</option>
-                    <option value="3">Challenges</option>
-                    <option value="4">Projects</option>
-                    <option value="5">Other</option>
+                    <option value="" aria-label="Select one, please">Select one, please</option>
+                    <option value="1" aria-label="Open Source">Open Source</option>
+                    <option value="2" aria-label="Community">Community</option>
+                    <option value="3" aria-label="Challenges">Challenges</option>
+                    <option value="4" aria-label="Projects">Projects</option>
+                    <option value="5" aria-label="Other">Other</option>
                 </select>
             </label>
         </fieldset>
 
         <fieldset>
             <legend>Are there feature(s) you'd like to see improved? (Check all that apply)</legend>
-            <label><input type="checkbox" name="feature" value="front-end"> Front-End Projects</label>
-            <label><input type="checkbox" name="feature" value="back-end"> Back-end Projects</label>
-            <label><input type="checkbox" name="feature" value="data-visualization"> Data Visualization</label>
-            <label><input type="checkbox" name="feature" value="challenges"> Challenges</label>
-            <label><input type="checkbox" name="feature" value="community"> Community</label>
-            <label><input type="checkbox" name="feature" value="gitter-help-rooms"> Gitter Help Rooms</label>
-            <label><input type="checkbox" name="feature" value="video-tutorials"> Video Tutorials</label>
-            <label><input type="checkbox" name="feature" value="city-meetups"> City Meetups</label>
-            <label><input type="checkbox" name="feature" value="wiki"> Wiki</label>
-            <label><input type="checkbox" name="feature" value="forum"> Forum</label>
-            <label><input type="checkbox" name="feature" value="additional-courses"> Additional Courses</label>
-            <label><input type="checkbox" name="feature" value="others"> Others</label>
+            <label><input type="checkbox" name="feature" value="front-end" aria-label="Front-End Projects"> Front-End Projects</label>
+            <label><input type="checkbox" name="feature" value="back-end" aria-label="Back-End Projects"> Back-end Projects</label>
+            <label><input type="checkbox" name="feature" value="data-visualization" aria-label="Data Visualization"> Data Visualization</label>
+            <label><input type="checkbox" name="feature" value="challenges" aria-label="Challenges"> Challenges</label>
+            <label><input type="checkbox" name="feature" value="community" aria-label="Community"> Community</label>
+            <label><input type="checkbox" name="feature" value="gitter-help-rooms" aria-label="Gitter Help Rooms"> Gitter Help Rooms</label>
+            <label><input type="checkbox" name="feature" value="video-tutorials" aria-label="Video Tutorials"> Video Tutorials</label>
+            <label><input type="checkbox" name="feature" value="city-meetups" aria-label="City Meetups"> City Meetups</label>
+            <label><input type="checkbox" name="feature" value="wiki" aria-label="Wiki"> Wiki</label>
+            <label><input type="checkbox" name="feature" value="forum" aria-labelledby="Forum"> Forum</label>
+            <label><input type="checkbox" name="feature" value="additional-courses" aria-label="Additional Courses"> Additional Courses</label>
+            <label><input type="checkbox" name="feature" value="others" aria-label="Others"> Others</label>
         </fieldset>
 
         <fieldset>
             <label id="suggestions-label" for="suggestions">Any comments or suggestions?</label>
             <textarea id="suggestions" name="suggestions" placeholder="Enter your comments here"></textarea>
         </fieldset>
-        <button id="submit-button" class="button-style" type="submit">Submit</button>
+        <button id="submit-button" class="button-style" type="submit" aria-label="Submit">Submit</button>
     </form>
     <script src="script.js"></script>
 </body>
