@@ -27,7 +27,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you'd like to contribute to this project, please fork the repository and create a pull request with your proposed changes.
 
-## Contact
-
-For any inquiries or feedback, you can reach me at: [Your Email](mailto:your.email@example.com).
 
